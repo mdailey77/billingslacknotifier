@@ -1,2 +1,2 @@
 # billingslacknotifier
-Azure Functions app that sends Azure monthly billing costs as a Slack message on a daily schedule
+Azure Functions app that sends Azure monthly billing costs as a Slack message on a daily schedule. The app first retrieves monthly billing costs according to service name and resource group from the Azure Cost Management API. The retrieved data is formatted for Slack using the Slack Block Kit syntax. The formatted data is sent to Slack by making a request to the Slack Web API.
